@@ -8,12 +8,13 @@ public class bai77 {
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap so mang");
         int n = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
+            System.out.println("Nhap gia tra mang");
             arr[i] = sc.nextInt();
         }
         show(arr);
