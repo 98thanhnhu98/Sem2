@@ -17,8 +17,7 @@ public class FlashLamp {
         this.battery = battery;
     }
     public void light(){
-        turnOn();
-        if(!status&&  battery != null && battery.getEnergy() > 0){
+        if( status &&  battery != null && battery.getEnergy() > 0){
             battery.decreaseEnergy();
         }
     }
@@ -32,20 +31,17 @@ public class FlashLamp {
     }
 
     public static void main(String[] args) {
-        FlashLamp flashLamp1 = new FlashLamp();
+        FlashLamp flashLamp = new FlashLamp();
         Battery battery1 = new Battery();
-        flashLamp1.setBattery(battery1);
         int i = 0;
         while (i < 10) {
-            flashLamp1.light();
-            System.out.println(flashLamp1.getBatteryInfo());
+            flashLamp.setBattery(battery1);
+            flashLamp.turnOn();
+            flashLamp.light();
             i++;
         }
-//        System.out.println("--------------");
-//        System.out.println(flashLamp.getBatteryInfo());
+        System.out.println(flashLamp.getBatteryInfo());
     }
-
-
 //        Scanner sc = new Scanner(System.in);
 //        Battery battery1 = new Battery();
 //        FlashLamp flashLamp1 = new FlashLamp();
@@ -86,5 +82,4 @@ public class FlashLamp {
 //        System.out.println("\n\n|-----------------|");
 //        System.out.println("Tinh Trang Pin Hien Tai La :" + pin);
 //    }
-
 }
