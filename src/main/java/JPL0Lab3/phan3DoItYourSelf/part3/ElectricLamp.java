@@ -1,4 +1,4 @@
-package JPL0Lab2.phan3DoItYourSelf.part3;
+package JPL0Lab3.phan3DoItYourSelf.part3;
 
 public class ElectricLamp {
     private boolean status;

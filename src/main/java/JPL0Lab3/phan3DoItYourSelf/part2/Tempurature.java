@@ -1,6 +1,4 @@
-package JPL0Lab2.phan3DoItYourSelf.part2;
-
-import java.util.Scanner;
+package JPL0Lab3.phan3DoItYourSelf.part2;
 
 public class Tempurature {
     private double cTemp;

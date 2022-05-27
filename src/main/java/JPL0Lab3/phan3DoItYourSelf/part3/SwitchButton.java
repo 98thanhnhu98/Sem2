@@ -1,27 +1,28 @@
-package JPL0Lab2.phan3DoItYourSelf.part3;
-
-import java.util.Scanner;
+package JPL0Lab3.phan3DoItYourSelf.part3;
 
 public class SwitchButton {
     private boolean status;  // Tình Trạng của công tắc
     private ElectricLamp lamp; //Tình Trạng của Pin
-
-    public SwitchButton() {
+    public SwitchButton(){
         this.status = false;
     }
     public void connectToLamp(ElectricLamp lamp) {
         this.lamp = lamp;
     }
-    public void switchOff() {
+    public void switchOff(){
         connectToLamp(this.lamp);
         this.lamp.turnOff();
-        this.status = false;
+        if (lamp != null) {
+            this.status = false;
+        }
         System.out.println("Tinh Trang Cua Pin La " + status);
     }
-    public void switchOn() {
+    public void switchOn(){
         connectToLamp(this.lamp);
         this.lamp.turnOn();
-        this.status = true;
+        if (lamp != null) {
+            this.status = true;
+        }
         System.out.println("Tinh Trang Cua Pin La " + status);
     }
 
@@ -29,10 +30,23 @@ public class SwitchButton {
         SwitchButton switchButton1 = new SwitchButton();
         ElectricLamp lamp1 = new ElectricLamp();
         switchButton1.connectToLamp(lamp1);
-        int i = 10;
-        boolean t;
+        int i = 0;
+        while (i < 10){
             switchButton1.switchOn();
+            switchButton1.switchOff();
+            i++;
         }
+//        int j = 0;
+//        while (j < 10){
+//            j++;
+//        }
+    }
+
+
+
+
+
+
 
 //        Scanner sc = new Scanner(System.in);
 //        ElectricLamp lamp1 = new ElectricLamp();

@@ -1,4 +1,4 @@
-package JPL0Lab2.phan2.part2;
+package JPL0Lab3.phan2.part2;
 
 public class Battery {
     private int energy;

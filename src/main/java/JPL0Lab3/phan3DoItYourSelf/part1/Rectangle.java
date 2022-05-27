@@ -1,4 +1,4 @@
-package JPL0Lab2.phan3DoItYourSelf.part1;
+package JPL0Lab3.phan3DoItYourSelf.part1;
 
 import java.util.Scanner;
 

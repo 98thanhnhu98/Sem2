@@ -1,5 +1,4 @@
 package codeToTay01.part6;
-import java.util.Scanner;
 public class bai58 {
     public static void main(String[] args) {
         int i = 1;

@@ -1,4 +1,4 @@
-package JPL0Lab2.phan2.part1;
+package JPL0Lab3.phan2.part1;
 //import java.util.Scanner;
 public class index {
     private int id;

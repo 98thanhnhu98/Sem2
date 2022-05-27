@@ -1,6 +1,4 @@
-package JPL0Lab2.phan2.part2;
-import JPL0Lab2.phan3DoItYourSelf.part3.SwitchButton;
-import java.util.Scanner;
+package JPL0Lab3.phan2.part2;
 
 public class FlashLamp {
     private boolean status = false;
@@ -40,8 +38,20 @@ public class FlashLamp {
             flashLamp.light();
             i++;
         }
+        while (i < 10) {
+            flashLamp.setBattery(battery1);
+            flashLamp.turnOff();
+            flashLamp.light();
+            i++;
+        }
         System.out.println(flashLamp.getBatteryInfo());
     }
+
+
+
+
+
+
 //        Scanner sc = new Scanner(System.in);
 //        Battery battery1 = new Battery();
 //        FlashLamp flashLamp1 = new FlashLamp();
