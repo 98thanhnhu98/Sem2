@@ -38,17 +38,17 @@ public class Repository {
 
     public void filterProductByAmountSale(){
         Product product = new Product();
-        long max = product.getAmountSale();
+        long resemble = product.getAmountSale();
         String name = null;
         String id = null;
         for (Product a : listProducts){
-            if (a.getAmountSale() >= max){
-                max = a.getAmountSale();
+            if (a.getAmountSale() >= resemble){
+                resemble = a.getAmountSale();
                 name = a.getName();
                 id = a.getId();
             }
         }
-        System.out.println("Sản Phẩm bán được nhiều nhất là : " + id + " - " + name + " - " +  max);
+        System.out.println("Sản Phẩm bán được nhiều nhất là : " + id + " - " + name + " - " +  resemble);
     }
     public void filterProductByCategory() {
         for (Product product : listProducts) {
@@ -92,55 +92,6 @@ public class Repository {
         }
     }
 
-//    System.out.println("1. id,name\n" +
-//            "2. id,name,category\n" +
-//            "3. id,name,category,amount\n" +
-//            "5. id,name,category,amount,price\n" +
-//            "6. id,name,category,amount,price,amountSale");
-
-//    public void setListProducts() {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Bạn muốn thay đổi thông tin sản phẩm có số thứ tự :");
-//        int id = sc.nextInt();
-//        System.out.println("Nhập thông tin muốn thay đổi :");
-//        System.out.println("id :");
-//        String changeId = sc.next();
-//        System.out.println("name :");
-//        String changeName = sc.next();
-//        System.out.println("Category Xin Chọn phần bạn muốn đổi : ");
-//        int chon = 0;
-////        for (int i = 0; i < 100; i++) {
-////            System.out.println("1. FOOD\n" + "2. HOUSEWARE\n" + "3. COSMETICS\n" + "4. FASHION");
-////            chon = sc.nextInt();
-////            if (chon == 1) {
-////                break;
-////            } else if (chon == 2) {
-////                break;
-////            } else if (chon == 3) {
-////                break;
-////            } else if (chon == 4) {
-////                break;
-////            } else {
-////                System.out.println("Thử lại đi bro");
-////            }
-////        }
-//            System.out.println("amount : ");
-//            long changeAmount = sc.nextInt();
-//            System.out.println("price : ");
-//            long changePrice = sc.nextInt();
-//            System.out.println("amountSale : ");
-//            long changeAmountSale = sc.nextInt();
-//            if (chon == 1) {
-//                listProducts.set(id,new Product(Category.FOOD));
-//            } else if (chon == 2) {
-//                listProducts.set(id,new Product(Category.HOUSEWARE));
-//            } else if (chon == 3) {
-//                listProducts.set(id,new Product(Category.COSMETICS));
-//            } else if (chon == 4) {
-//                listProducts.set(id,new Product(Category.FASHION));
-//            }
-//        listProducts.set(id, new Product(changeId, changeName, changeAmount, changePrice, changeAmountSale));
-//    }
 public void setListProducts() {
         listProducts.set(2, new Product("03","thanh",Category.COSMETICS,1205,25000,1070));
     for (Product product : listProducts) {
