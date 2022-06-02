@@ -1,8 +1,5 @@
 package JPL0Lab8.HashSet;
-
 import java.util.*;
-
-import static JPL0Lab8.HashSet.StudentListFirst.convertToList;
 
 public class AppFirst {
     private static Scanner input = new Scanner(System.in);
@@ -20,7 +17,6 @@ public class AppFirst {
     public static void main(String[] args) {
         list = new StudentListFirst();
         menu();
-        List<StudentFirst> list = new LinkedList<>();
 
         while (true){
             int choice;
@@ -39,13 +35,6 @@ public class AppFirst {
                 searchById();
                 menu();
             } else if (choice == 5) {
-                Collections.sort(list ,new Comparator<StudentFirst>() {
-                    @Override
-                    public int compare(StudentFirst s1, StudentFirst s2) {
-                        double flag = s2.getMark() - s1.getMark();
-                        return Double.compare(s2.getMark(), s1.getMark());
-                    }
-                });
                 printSorted();
                 menu();
             } else if (choice == 6) {

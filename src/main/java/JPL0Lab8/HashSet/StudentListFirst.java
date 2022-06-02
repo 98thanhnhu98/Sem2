@@ -61,23 +61,13 @@ public class StudentListFirst {
             }
         }
     }
-
-//    public void sortByMark(){
-//        list.stream().sorted(new Comparator<StudentFirst>() {
-//            @Override
-//            public int compare(StudentFirst o1, StudentFirst o2) {
-//                return Double.compare(o1.getMark(), o2.getMark());
-//            }
-//        });
+//    public static List<StudentFirst> convertToList(Set<StudentFirst> set) {
+//        List<StudentFirst> list = new LinkedList<>();
+//        for(StudentFirst element: set) {
+//            list.add(element);
+//        }
+//        return list;
 //    }
-
-    public static List<StudentFirst> convertToList(Set<StudentFirst> set) {
-        List<StudentFirst> list = new LinkedList<>();
-        for(StudentFirst element: set) {
-            list.add(element);
-        }
-        return list;
-    }
 
     public void showList(){
         for (StudentFirst s : list){

@@ -3,8 +3,6 @@ package JPL0Lab8.HashSet;
 
 import java.util.Scanner;
 
-import static JPL0Lab6.part1.Product.formatMoney;
-
 public class StudentFirst {
     private int id;
     private String firstName;
