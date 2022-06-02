@@ -19,7 +19,7 @@ public class StudentList {
         boolean found = false;
         ArrayList<Student> matches = new ArrayList<>();
         for (Student s : list){
-            String fullName = new String(s.getFirstName() + " " + s.getLastName()).toLowerCase();
+            String fullName = (s.getFirstName() + " " + s.getLastName()).toLowerCase();
             if (fullName.matches("(.*)" + name.toLowerCase() + "(.*)")){
                 matches.add(s);
                 found = true;
