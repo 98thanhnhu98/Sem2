@@ -1,8 +1,7 @@
 package JPL0Lab8.HashSet;
 
-import JPL0Lab7.Student;
-
 import java.util.Scanner;
+import java.util.TreeSet;
 
 import java.util.*;
 
@@ -61,13 +60,9 @@ public class StudentListFirst {
             }
         }
     }
-//    public static List<StudentFirst> convertToList(Set<StudentFirst> set) {
-//        List<StudentFirst> list = new LinkedList<>();
-//        for(StudentFirst element: set) {
-//            list.add(element);
-//        }
-//        return list;
-//    }
+
+    public void sortByMark(){
+    }
 
     public void showList(){
         for (StudentFirst s : list){

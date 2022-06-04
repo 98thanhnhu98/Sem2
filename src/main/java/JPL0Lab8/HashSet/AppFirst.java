@@ -39,6 +39,9 @@ public class AppFirst {
                 menu();
             } else if (choice == 6) {
                 System.exit(0);
+            } else if (choice == 7) {
+                list.sortByMark();
+                menu();
             }
         }
     }
@@ -88,7 +91,6 @@ public class AppFirst {
     }
 
     public static void printSorted(){
-//        list.sortByMark();
         list.showList();
     }
 
