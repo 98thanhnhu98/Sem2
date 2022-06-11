@@ -1,7 +1,6 @@
 package JPL0Lab8.HashSet;
 
 import java.util.Scanner;
-import java.util.TreeSet;
 
 import java.util.*;
 
@@ -31,7 +30,7 @@ public class StudentListFirst {
         return matches;
     }
 
-    public StudentFirst findById (int id){
+    public StudentFirst findById (int id){  //tìm id theo cách Obeject.finById( truyền vào tham số mang kiểu giá trị int )
         for (StudentFirst s : list){
             if (s.getId() == id){
                 return s;

@@ -11,7 +11,7 @@ public class Dir {
         }
     }
     public static void main(String[] args) {
-        listPath(new File("C:\\WINDOWS"));
+        listPath(new File("C:\\WINDOWS\\"));
     }
 }
 

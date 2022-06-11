@@ -1,4 +1,4 @@
-package doItAgainOnClass.linkList;
+package doItAgainOnClass.linkList.LinkListDemo;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;

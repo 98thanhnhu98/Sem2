@@ -1,7 +1,5 @@
 package JPL0Lab10.part2.ex1;
 
-import java.util.Scanner;
-
 /**
      * Write a description of class Client here.
  *
