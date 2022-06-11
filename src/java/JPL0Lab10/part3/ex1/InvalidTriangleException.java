@@ -1,24 +1,11 @@
 package JPL0Lab10.part3.ex1;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-public class InvalidTriangleException {
-    private ArrayList<String> catchError = new ArrayList<String>();
-    private String Error;
-    public InvalidTriangleException(String error){
-        catchError.add(error);
-    }
+public class InvalidTriangleException { //DONE
+    private static Triangle list = new Triangle();
     public InvalidTriangleException(){
     }
-    public void showError (){
-        for (String a : catchError) {
-            System.out.println(a);
-        if (a == null) {
-            System.out.println("Chưa có lỗi nào");
-        }
-        }
-    }
-    public void menu(){
+    public static void menu(){
         System.out.println("1. Thêm cạnh");
         System.out.println("2. tính diện tích");
         System.out.println("3. Xem lỗi đã bị");
@@ -26,23 +13,24 @@ public class InvalidTriangleException {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Triangle triangle = new Triangle();
-        InvalidTriangleException in = new InvalidTriangleException();
-        Client client = new Client();
         while (true){
-            in.menu();
+            menu();
             int chosse = sc.nextInt();
             switch (chosse){
                 case 1:
-                    triangle.addCanh();
+                    list.addCanh();
                     break;
                 case 2:
-                    triangle.showList();
+                    list.showList();
+                    System.out.println("Nhập vị trí cần tính diện tích : ");
                     int chon = sc.nextInt();
-                    triangle.showArea(chon);
+                    Client i = list.findById(chon);
+                    if (i == null){
+                        System.out.println("Không tìm thấy vị trí");
+                    }
                     break;
                 case 3:
-                    in.showError();
+                    list.showError();
                     break;
                 case 4:
                     System.exit(0);

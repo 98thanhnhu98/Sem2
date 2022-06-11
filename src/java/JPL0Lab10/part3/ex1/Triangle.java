@@ -2,12 +2,29 @@ package JPL0Lab10.part3.ex1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Triangle {
+public class Triangle { //list //DONE
+
+    private ArrayList<Errror> loi = new ArrayList<>();
     private ArrayList<Client> test = new ArrayList<>();
+
+    // của CLien
     public Triangle() {
+        loi.add(new Errror("Lỗi Exception1"));
         test.add(new Client(0,12,5));
         test.add(new Client(1,19,16));
         test.add(new Client(2,8,20));
+    }
+    public Client findById(int id){
+        int dientich = 0;
+        for (Client s : test){
+            if (s.getId() == id){
+                s.printfCanh();
+                dientich = s.printArea();
+                System.out.println("diện tích bằng : " + dientich);
+                return s;
+            }
+        }
+        return null;
     }
     public void addCanh(){
         Scanner sc = new Scanner(System.in);
@@ -22,8 +39,9 @@ public class Triangle {
             test.add( new Client(id,nhapCH , nhapCV));
         }
         catch (Exception a){
-            System.out.println("lỗi exception " + a.getMessage());
-            InvalidTriangleException invalidTriangleException = new InvalidTriangleException("lỗi Exception");
+            System.out.println("lỗi exception :" + a.getMessage());
+            String error = "lỗi exception :" + a.getMessage();
+            loi.add(new Errror(error));
         }
     }
     public void showList(){
@@ -32,13 +50,26 @@ public class Triangle {
         }
     }
     public void showArea(int vitri){
-        Client client = new Client();
-       for (Client a1 : test){
-           a1.printfCanh();
-           if (client.getId() == vitri){
-               a1.printArea();
-               break;
-           }
-       }
+        int dientich = 0;
+            for (Client a1 : test) {
+                a1.printfCanh();
+                if (a1.getId() == vitri) {
+                    dientich = a1.printArea();
+                    System.out.println("diện tích bằng : " + dientich);
+                    break;
+                }
+            }
+        if (dientich == 0) {
+            System.out.println("lỗi ko chạy tính diện tích");
+        }
+    }
+
+
+    // của Error
+    public void showError (){
+        for (Errror a : loi) {
+            a.printError();
+            System.out.println();
+        }
     }
 }
