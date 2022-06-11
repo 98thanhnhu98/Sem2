@@ -2,7 +2,7 @@ package JPL0Lab9;
 
 import java.util.Objects;
 
-public class ValidationAccount {
+public class ValidationAccount {  // DONE
     private final String MOBILE ="1";
     private final String PASSWORLD = "2";
     public boolean checkAccount(String mobile , String pass){

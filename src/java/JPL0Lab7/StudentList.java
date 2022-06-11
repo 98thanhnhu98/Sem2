@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class StudentList {
+public class StudentList {  // DONE
     private ArrayList<Student> list = new ArrayList<>();
     private int length;
 

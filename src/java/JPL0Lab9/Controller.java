@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Controller {
+public class Controller {  // DONE
     private static long balanceNumber = 10000000;
     List<TransactionHistory> listHistory = new ArrayList<TransactionHistory>();
 

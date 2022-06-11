@@ -6,7 +6,7 @@ package JPL0Lab10.part2.ex3;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class MoreClass{
+public class MoreClass{  // DONE
 
     public static void main(String[] args) {
         Object obj1 = new Object();

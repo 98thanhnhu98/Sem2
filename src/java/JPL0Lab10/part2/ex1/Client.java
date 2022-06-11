@@ -1,12 +1,11 @@
 package JPL0Lab10.part2.ex1;
-
 /**
      * Write a description of class Client here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Client {
+public class Client {  // DONE
     public Client() {
         String test = "1234";
         doUnchecked(test);

@@ -2,7 +2,7 @@ package JPL0Lab7;
 
 import java.util.Scanner;
 
-public class Student {
+public class Student {  // DONE
     private int id;
     private String firstName;
     private String lastName;

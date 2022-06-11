@@ -2,7 +2,7 @@ package JPL0Lab9;
 
 import java.util.Scanner;
 
-public class Application {
+public class Application {  // DONE
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         ValidationAccount validationAccount = new ValidationAccount();

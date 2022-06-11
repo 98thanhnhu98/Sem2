@@ -2,7 +2,7 @@ package JPL0Lab9;
 
 import java.util.concurrent.locks.ReentrantLock;
 
-public class IdGenerate {
+public class IdGenerate {  // DONE
     private static long id = 0L;
     private static ReentrantLock lock = new ReentrantLock();
 
