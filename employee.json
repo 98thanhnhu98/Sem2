@@ -1,0 +1,45 @@
+[
+  {
+  "id": 1,
+  "name": "Đức Minh",
+  "email": "ducminh@gmail.com",
+  "role": [
+    "Leader"],
+  "manager": true
+  },{
+  "id": 2,
+  "name": "Thành",
+  "email": "thanh@gmail.com",
+  "role": [
+    "Admin"],
+  "manager": true
+},{
+  "id": 3,
+  "name": "Minh Thạch",
+  "email": "minhthach@gmail.com",
+  "role": [
+    "Admin"],
+  "manager": true
+},{
+  "id": 4,
+  "name": "bich",
+  "email": "bich@gmail.com",
+  "role": [
+    "Admin"],
+  "manager": true
+},{
+  "id": 5,
+  "name": "Quân",
+  "email": "quan@gmail.com",
+  "role": [
+    "CTV"],
+  "manager": false
+},{
+  "id": 6,
+  "name": "hoanganh",
+  "email": "hoanganh@gmail.com",
+  "role": [
+    "CTV"],
+  "manager": false
+}
+]

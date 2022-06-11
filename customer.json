@@ -1,0 +1,12 @@
+[
+  {
+    "id" : 1,
+    "name" : "thanh",
+    "address" : "Quang Ninh"
+  },
+  {
+    "id" : 2,
+    "name" : "thang",
+    "address" : "Ninh Binh"
+  }
+]
